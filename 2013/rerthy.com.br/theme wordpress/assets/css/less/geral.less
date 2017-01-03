@@ -1,0 +1,61 @@
+/*
+	body e estilos gerais
+*/
+
+body{
+	.backgroundImage('body_fundo.jpg');
+	background-repeat: repeat;
+	background-position: top center;
+	color: @corMarron;
+	font-family: 'lane_-_narrowregular';
+}
+.BGImg{
+	.backgroundImage('body_fundo.jpg');
+	background-repeat: repeat;
+	background-position: top center;
+}
+a{
+	cursor: pointer;
+	color: @corMarron;
+	&,&:hover{
+		text-decoration: none;
+	}
+}
+
+p{
+	font-size: 15px;
+	font-family: 'myriad_proregular';
+	line-height: 15px;
+}
+
+h2{
+	padding: 2px 0px;
+	margin: 0px;
+	.backgroundImage('h2_line.png');
+	background-position: bottom left;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	&.big{
+		font-size: 35px;
+	}
+}
+
+h3{
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	small{
+		background-color: @corBegeClaro;
+		padding: 3px 7px;
+	}
+	+p{
+		font-size: 15px;
+	}
+}
+
+figure{
+	>img{
+		width: 100%;
+	}
+}

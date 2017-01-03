@@ -1,0 +1,1 @@
+<script language= "JavaScript">location.href="<?php bloginfo('home');?>"</script>

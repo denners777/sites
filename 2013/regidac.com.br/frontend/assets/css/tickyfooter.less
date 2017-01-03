@@ -1,0 +1,37 @@
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%; width: 100%;position: relative;
+}
+
+#main {
+	overflow:auto;
+	padding-bottom: 343px;
+}   
+/* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -343px;  /* negative value of footer height */
+	height: 343px;
+	clear:both;
+	z-index: 3;
+} 
+
+/*Opera Fix*/
+body:before { 
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;
+}

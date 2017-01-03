@@ -1,0 +1,27 @@
+header .menu{
+	width : 819px; 
+	border-bottom:4px solid #E2E2E2;
+	border-right:4px solid #E2E2E2;
+}
+header .menu ul li a:hover{
+	background-color:#9F0000;
+}
+body>#wrap{
+	border-left:5px solid #A0A0A0;
+	border-right:5px solid #A0A0A0;
+}
+#main .topo{
+	border-bottom:4px solid #BFBFBF;
+}
+footer{
+	border-top:6px solid #999999;
+}
+#Slider > .items > .item > p {
+	font-weight:normal;
+}
+#main .middle .box_equipe .content hgroup > h3 {
+	font-weight:normal;
+}
+#main .middle .box_equipe figure {
+	height:315px;
+}

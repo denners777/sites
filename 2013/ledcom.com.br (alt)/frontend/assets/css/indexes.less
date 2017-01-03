@@ -1,0 +1,231 @@
+.font(@f) when (@f = ob){ font-family: 'oswaldbold'; }
+.font(@f) when (@f = ol){ font-family: 'oswaldlight'; }
+.font(@f) when (@f = or){ font-family: 'oswaldregular'; }
+
+
+.peso(@p) when (@p = n){font-weight: normal; }
+.peso(@p) when (@p = l){font-weight: lighter; }
+.peso(@p) when (@p = b){font-weight: bold; }
+
+.tam(@t){font-size: @t;}
+
+@verde: #B3D335;
+@menu: #B2FF3F;
+@info: #2C364B;
+@letra: #BAB9B9;
+
+html, body{
+	.tam(12px);
+	.font(or);
+	.peso(n);
+	color: #000;
+	background: url('../img/bg-box.png');
+	background-color: #444;
+	line-height: 0;
+}
+header{
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	z-index: 9;
+	.logo{
+		background: url('../img/logo.png') no-repeat left center;
+		padding: 23px 73px;
+		width: 175px;
+		height: 46px;
+		margin: 0px 0px 0px 36px;
+		h1{
+			margin: 0;
+		}
+	}
+	.menu{
+		ul{
+			height: 80px;
+			width: 100%;
+			li{
+				float: left;
+				display: inline-block;
+				line-height: 80px;
+				a{
+					.font(ol);
+					.tam(17px);
+					.peso(l);
+					letter-spacing: 2px;
+					color: #FFF;
+					text-decoration: none;
+					padding: 0px 8px;
+					/*-webkit-transition: all 300ms ease-in-out;
+					-moz-transition: all 300ms ease-in-out;
+					-ms-transition: all 300ms ease-in-out;
+					-o-transition: all 300ms ease-in-out;
+					transition: all 300ms ease-in-out;*/
+					&:hover{
+						color:#B2FF3F;
+					}
+				}
+			}
+		}
+	}
+}
+.main{
+	video, .box-led, figure{
+		outline: 1px solid #B2FF3F;
+		opacity: 0;
+	}
+	.video{
+		position: relative;
+		.figure{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		h3{
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			margin: 0;
+			padding: 20px 10px;
+			color: #B3D335;
+			.tam(19px);
+			background-color: rgba(0,0,0,0.75);
+			.font(ol);
+			.peso(l);
+			text-transform: uppercase;
+			line-height: 19px;
+			&.bott{
+				bottom: 70px;
+			}
+		}
+	}
+	.box-led{
+		height: 350px;
+		background: url('../img/bg-box.png');
+		background-color: #B3D335;
+		h1{
+			.tam(44px);
+			.font(ob);
+			color: #FFF;
+			line-height: 28px;
+			margin: 0;
+		}
+		p{
+			line-height: 16px;
+			text-align: justify;
+			color: #000;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			li{
+				line-height: 28px;
+				.tam(17px);
+				a{
+					color: #000;
+					text-decoration: none;
+					&:hover{
+						font-weight:bold;
+					}
+				}
+			}
+		}
+		.quem{
+			position: relative;
+			top: 100px;
+			width: 280px;
+			margin: 0 auto;
+		}
+		.solucoes{
+			position: relative;
+			top: 90px;
+			width: 290px;
+			margin: 0 auto;
+			h1{
+				.tam(41px);
+				line-height: 54px;
+				width: 200px;
+			}
+		}
+		.cliente{
+			position: relative;
+			top: 100px;
+			width: 170px;
+			margin: 0 auto;
+			a{
+				text-decoration: none;
+			}
+			
+		}
+	}
+}
+footer{
+	width: 100%;
+	height: 48px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
+	.rede-sociais{
+		ul{
+			list-style: none;
+			padding-left: 0;
+			width: 100%;
+			li{
+				float: left;
+				display: block;
+				padding: 0px 5px;
+				.icons{
+					background: url('../img/icon-social.png') no-repeat left top;
+					padding: 13px;
+					width: 0px;
+					height: 36px;
+					display: block;
+					text-indent: -9999999px;
+					color: #000 !important;
+					word-spacing: -1px;
+					&.facebook{
+						background-position: -34px 0;
+					}
+					&.twitter{
+						background-position: -69px 0;
+					}
+					&.vimeo{
+						background-position: -104px 0;
+					}
+					&.skype{
+						background-position: -138px 0;
+					}
+					&.orkut{
+						background-position: -173px 0;
+					}
+				}
+			}
+		}
+	}
+	.logo-conecte{
+		background: url('../img/logoconecte.png') no-repeat left top;
+		width: 101px;
+		height: 20px;
+		line-height: 25px;
+		margin: 14px 0px 0px 152px;
+	}
+}
+#header, #footer{
+	overflow: hidden;
+	height: 0px;
+}
+.logo, .menu ul li a{
+	position: relative;
+	top: -80px;
+}
+.rede-sociais ul li a{
+	position: relative;
+	top: 50px;
+}
+.main .video h3{
+	opacity: 0;
+	bottom: 180px;
+}

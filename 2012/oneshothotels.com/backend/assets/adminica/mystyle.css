@@ -1,0 +1,31 @@
+/* 
+    Document   : mystyle
+    Created on : 12/09/2012, 15:30:23
+    Author     : Conecte_Estudio
+*/
+
+.button{
+    cursor: pointer;
+}
+
+div.selector{
+    max-width: 460px !important;
+}
+.gallery li a img{
+    max-width: 600px !important;
+}
+fieldset.label_side > div {
+    /*height: 55px;*/
+}
+.formImg .btnContent{
+    padding-top: 22px;
+}
+.formImg .btnContent button{
+    float: right
+}
+
+@media screen and (max-width: 480px) and (min-width: 321px){
+    .gallery li a img{
+        max-width: 400px !important;
+    }
+}

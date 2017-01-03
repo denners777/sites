@@ -1,0 +1,900 @@
+@import 'fonts/stylesheet.css';
+@import 'normalize.less';
+@import '960.custom.less';
+@import 'boilerplate.less';
+@import '../js/lightbox/themes/evolution/jquery.lightbox.css';
+
+.getBackground(@IMG){ background: no-repeat url("../img/@{IMG}"); }
+
+.BordaRedonda(@PX: 5px){
+	-webkit-border-radius: @PX;
+	border-radius: @PX;
+}
+
+.Font (@Peso) when (@Peso = 0){ font-family: 'lane_-_narrowregular'; }
+.Font (@Peso) when (@Peso = 1){ font-family: 'myriad_proregular'; }
+
+@AzulFundo: #C8E8E3;
+@VerdeMenu: rgba(151, 203, 188, 0.85);
+@VerdeSubMenu: rgba(112, 184, 163, 0.85);
+@Roxo: #784b87;
+@Bordo: #702d1b;
+
+
+html, body, #wrap {height: 100%;}
+
+body > #wrap {height: auto; min-height: 100%;}
+
+.mainpage{//overflow:auto;
+	padding-bottom: 10px;}  /* deve ter a mesma altura do rodapé */
+
+
+	/*Opera Fix*/
+	body:before {
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;
+	}
+
+
+/*
+Autor 	Luiz Vinicius luiz.vinicius73@gmail.com
+Denner Fernandes denners777@hotmail.com
+*/
+body{
+	background-color: @AzulFundo; 
+	.Font(0);
+	color: @Bordo;
+}
+
+a{
+	cursor: pointer;
+	&,&:hover{
+		text-decoration: none;
+	}
+}
+
+#Logo{
+	.getBackground('logo.png');
+	height: 180px;
+}
+.traco_top{
+	width: 100%;
+	height: 11px;
+	background-color: #764887;
+	margin-bottom: 5px;
+}
+#header{
+	.getBackground('header_linha.png');
+	background-position: bottom center;
+}
+
+#Menu{
+	margin-top: 25px;
+	padding-bottom: 10px;
+	zoom: 0.9;
+	margin-left: 92px;
+	position: relative;
+	left: 61px;
+	top: 10px;
+	ul{
+		margin: 0;
+		padding: 0px;
+	}
+	li{
+		display: inline-block;
+		height: 124px;
+		width: 74px;
+		text-align: center;
+		margin-left: -5px;
+		.Font(1);
+		font-size: 16px;
+		.getBackground('menu_icons.png');
+		background-position: -3px 0px;
+		cursor: pointer;
+		&:hover, &.current-menu-item{
+			background-position-y: -150px;
+			a{
+				color: #fff;
+			}
+		}
+		&:first-child{
+			margin: 0;
+		}
+		&.baby{
+			background-position-x: -154px;
+			width: 88px;
+		}
+		&.papelaria{
+			background-position-x: -243px;
+			width: 90px;
+			margin-left: -4px;
+		}
+		&.casamento{
+			background-position-x: -333px;
+			width: 112px;
+		}
+		&.logomarca{
+			background-position-x: -446px;
+			width: 109px;
+			margin-left: -4px;
+		}
+		&.photobook{
+			background-position-x: -556px;
+			width: 111px;
+			margin-left: -4px;
+		}
+		&.revenda{
+			background-position-x: -668px;
+			width: 88px;
+		}
+
+		a{
+			line-height: 90px;
+			color: @Roxo;
+			padding: 31px 16px 66px 16px;
+			-webkit-transition: all 100ms ease-in-out;
+			-moz-transition: all 100ms ease-in-out;
+			-ms-transition: all 100ms ease-in-out;
+			-o-transition: all 100ms ease-in-out;
+			transition: all 100ms ease-in-out;
+		}
+		&.drop{
+			position: relative;
+			&:hover ul{
+				display:inline-block;
+			}
+			ul{
+				background-color: @VerdeMenu;
+				display: none;
+				position: absolute;
+				top: 121px;
+				left: 2px;
+				width: 97%;
+				z-index: 999;
+				margin: 0px;
+				padding: 0px;
+				li{
+					display: inline-block;
+					background-image: none;
+					height: 30px;
+					border-bottom: 1px dashed #FFF;
+					padding: 5px 0px;
+					margin: 0px auto;
+					width: 85%;
+					&:last-child{
+						border-bottom:none;
+					}
+					a{
+						background-image: none;
+						display: block;
+						font-size: 11px;
+						line-height: 30px;
+						color: @Roxo;
+						margin: -4px -7px;
+						padding: 4px 0px;
+						text-transform: uppercase;
+						&:hover{
+							background-color: @VerdeSubMenu;
+							color: #FFF;
+						}
+					}
+				}
+			}
+		}
+		&.festa{
+			background-position-x: -77px;
+			width: 76px;
+			ul li a{
+				margin: -4px -5px;
+			}
+		}
+	}
+}
+@-moz-document url-prefix() {
+	#Menu{
+		margin-left: 0;
+		li{
+			&:hover, &.current-menu-item{
+				background-position: 0px -150px;
+			}
+			
+			&.baby{
+				background-position: -154px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -154px -150px;
+				}
+			}
+			&.papelaria{
+				background-position: -243px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -243px -150px;
+				}
+			}
+			&.casamento{
+				background-position: -333px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -333px -150px;
+				}
+			}
+			&.logomarca{
+				background-position: -446px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -446px -150px;
+				}
+			}
+			&.photobook{
+				background-position: -556px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -556px -150px;
+				}
+			}
+			&.revenda{
+				background-position: -668px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -668px -150px;
+				}
+			}
+			&.festa{
+				background-position: -77px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -77px -150px;
+				}
+			}
+		}
+	}
+}
+@media not all and (-webkit-min-device-pixel-ratio:0) {  
+    #Menu{
+		margin-left: 0;
+		li{
+			&:hover, &.current-menu-item{
+				background-position: 0px -150px;
+			}
+			
+			&.baby{
+				background-position: -154px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -154px -150px;
+				}
+			}
+			&.papelaria{
+				background-position: -243px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -243px -150px;
+				}
+			}
+			&.casamento{
+				background-position: -333px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -333px -150px;
+				}
+			}
+			&.logomarca{
+				background-position: -446px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -446px -150px;
+				}
+			}
+			&.photobook{
+				background-position: -556px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -556px -150px;
+				}
+			}
+			&.revenda{
+				background-position: -668px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -668px -150px;
+				}
+			}
+			&.festa{
+				background-position: -77px 0px;
+				&:hover, &.current-menu-item{
+					background-position: -77px -150px;
+				}
+			}
+		}
+	}
+}  
+
+#Slider{
+	height: 295px;
+	background-image: url('../img/slider_fundo.png');
+	background-repeat: repeat-x;
+	nav{
+		height: 290px;
+		position: relative;
+		.getBackground('slider_passaro.png');
+		background-position: bottom;
+		.navi{
+			position: absolute;
+			bottom: 43px;
+			left: 70px;
+			> span{
+				.getBackground('nav_slider.png');
+				background-position: top left;
+				padding: 0px 15px 0px 0px;
+				margin-right: 10px;
+				display: inline-block; 
+				border: 0; 
+				text-indent: -999em; 
+				overflow: hidden;
+				text-align: left; 
+				direction: ltr; 
+				*line-height: 0;
+				cursor: pointer;
+				&.cycle-pager-active{
+					background-position:-18px 0px;
+				}
+			}
+		}
+	}
+	.item{
+		position: relative;
+		figure{
+			margin: 20px 0 0 35px;
+			img{
+				max-width: 755px;
+			}
+		}
+	}
+	.grid_19{
+		height: 370px;
+		zoom: 0.9;
+		position: relative;
+		left: 111px;
+	}
+}
+
+.mainpage{
+	position: relative;
+	top: -20px;
+	h1{
+		font-weight: normal;
+		font-size: 22px;
+		margin: 7px 0px 0px -50px;
+	}
+	ul{
+		list-style-image: url('../img/ul_bullet.png');
+		margin: 0px;
+		padding-left: 15px;
+		position: relative;
+		right: 50px;
+		top: 10px;
+		li{
+			font-size: 17px;
+			line-height: 23px;
+		}
+	}
+
+	&#Home{
+		margin-top: 20px;
+	}
+}
+@-moz-document url-prefix() {
+	.mainpage{
+		h1{
+			margin: 7px 0px 0px 0px;
+		}
+		ul{
+			right: 0px;
+			top: 10px;
+		}
+	}
+}
+
+#footer{
+	height: 45px;
+	background-color: @Roxo;
+	position: relative;
+	margin-top: -45px; /* valor negativo da altura do rodapé */
+	clear:both;
+	p{
+		font-size: 10px;
+		padding-left: 30px;
+		color: #fff;
+		margin-top: 15px;
+	}
+
+	.conecte{
+		height: 28px;
+		.getBackground('conecte.png');
+		margin-top: 12px;
+	}
+}
+
+#Social{
+	margin-top: 40px;
+	.ir{
+		height: 50px;
+		width: 50px;
+		.getBackground('social_icons.png');
+		display: block;
+		background-position: left top;
+		&:hover{
+			background-position-y: -72px;
+		}
+		&.facebook{
+			background-position-x: 0px;
+		}
+		&.pintrest{
+			background-position-x: -62px;
+		}
+		&.email{
+			background-position-x: -125px;
+		}
+		&.duvidas{
+			background-position-x: -192px;
+		}		
+	}
+	ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	li{
+		display: inline-block;
+		margin-right: 15px;
+		a.fita{
+			position: relative;
+			top: -20px;
+			left: 70px;
+		}
+	}
+}
+@-moz-document url-prefix() { 
+	#Social{
+		.ir{
+			&:hover{
+				background-position: 0px -72px;
+			}
+			&.facebook{
+				background-position: 0px 0px;
+			}
+			&.pintrest{
+				background-position: -62px 0px;
+			}
+			&.email{
+				background-position: -125px 0px;
+			}
+			&.duvidas{
+				background-position: -192px 0px;
+			}
+		}
+	}
+}
+
+.fita{
+	.getBackground('fita.png');
+	height: 46px;
+	color: #fff;
+	background-position: right top;
+	font-size: 18px;
+	line-height: 37px;
+	padding: 0px 23px 0px 10px;
+	display: inline-block;
+	&:hover{
+		background-position-y:-51px;
+	}
+}
+.orcamento{
+	zoom: 0.9;
+	width: 240px;
+	height: 318px;
+	position: relative;
+	left: -5px;
+	top: -7px;
+	margin-bottom: 15px;
+	.getBackground('orcamento.png');
+	background-position-x:0px;
+	&:hover{
+		background-position:-278px 0px;
+	}
+}
+.full{
+	background: url('../img/plano_fundo.png') repeat-x top;
+	width: 100%;
+	height: 227px;
+	.icon-princ{
+		background: url('../img/icons_internas.png') no-repeat;
+		position: relative;
+		top: 25px;
+		&.festa-menina{
+			width: 220px;
+			height: 207px;
+			background-position: left top;
+		}
+		&.festa-menino{
+			width: 251px;
+			height: 207px;
+			background-position: -231px top;
+			position: relative;
+			right: 35px;
+		}
+		&.festa-adulto{
+			width: 229px;
+			height: 207px;
+			background-position: -483px 18px;
+		}
+		&.baby{
+			width: 229px;
+			height: 207px;
+			background-position: -728px 14px;
+		}
+		&.album-bebe{
+			width: 229px;
+			height: 214px;
+			background-position: -963px top;
+			top: 13px;
+		}
+		&.papelaria-menina{
+			width: 229px;
+			height: 212px;
+			background-position: -1182px top;
+			top: 21px;
+		}
+		&.papelaria-menino{
+			width: 229px;
+			height: 212px;
+			background-position: -1436px top;
+			top: -27px;
+			left: 6px;
+		}
+		&.papelaria-unissex{
+			width: 229px;
+			height: 212px;
+			background-position: -1689px top;
+		}
+		&.papelaria-adulto{
+			width: 229px;
+			height: 212px;
+			background-position: 0px -219px;
+			top: 48px;
+		}
+		&.casamento{
+			width: 229px;
+			height: 212px;
+			background-position: -240px -219px;
+			top: 41px;
+		}
+		&.logomarca{
+			width: 229px;
+			height: 215px;
+			background-position: -481px -205px;
+			top: 15px;
+		}
+		&.photobook{
+			width: 229px;
+			height: 215px;
+			background-position: -731px -205px;
+		}
+		&.revenda{
+			width: 229px;
+			height: 215px;
+			background-position: -952px -215px;
+			top: 34px;
+		}
+		&.duvidas{
+			width: 229px;
+			height: 215px;
+			background-position: -1203px -215px;
+			top: 30px;
+		}
+		&.orcament{
+			width: 229px;
+			height: 215px;
+			background-position: -1444px -215px;
+			top: 30px;
+		}
+		&.revenda2{
+			width: 229px;
+			height: 183px;
+			background-position: -1444px -422px;
+			top: 52px;
+		}
+	}
+	h2{
+		width: 200px;
+		height: 41px;
+		margin: 0;
+		color: white;
+		font-size: 21px;
+		font-weight: lighter;
+		text-align: center;
+		background: url('../img/icons_internas.png') no-repeat -794px -461px;
+		padding-top: 35px;
+		position: relative;
+		top: -2px;
+	}
+	p{
+		color: #764887;
+		font-size: 20px;
+		margin-bottom: 3px;
+	}
+	.orca-inter{
+		background: url('../img/icons_internas.png') no-repeat -997px -478px;
+		padding: 10px 95px;
+		float: right;
+	}
+}
+.grid-inter{
+	position: relative;
+	margin-bottom: 60px;
+	&.no{
+		border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+		min-height: 212px;
+	}
+	
+	&:after{
+		content: '';
+		border-bottom: 1px dashed rgba(27, 94, 84, 0.2);
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		bottom: 2px;
+		right: 0;
+	}
+	
+	
+	.grid_6{
+		margin-bottom: 20px;
+	}
+	a{
+		position: relative;
+		figure{
+			background: transparent;
+			width: 200px;
+			height: 134px;
+			position: relative;
+			left: 14px;
+			margin-top: 10px;
+			&.figure{
+				height: 140px;
+			}
+			img{
+				margin: 10px 0 0 10px;
+			}
+		}
+		figcaption{
+			position: absolute;
+			bottom: -10px;
+			left: 0px;
+			background: url('../img/icons_internas.png') no-repeat -1678px -345px;
+			width: 231px;
+			height: 26px;
+			padding-top: 5px;
+			color: #FFF;
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+}
+#duvida{
+	.grid_24{
+		padding-top: 60px;
+		padding-bottom: 45px;
+	}
+	h3{
+		color: #784B87;
+		font-size: 25px;
+		font-family: 'myriad_proregular';
+		margin: 0 0 20px 0;
+	}
+	p{
+		font-family: 'lane_-_narrowregular';
+		color: #702E1B;
+		font-size: 18px;
+		margin: 0 0 5px 0;
+		a{
+			color: #784B87;
+			font-size: 18px;
+		}
+	}
+	> .total{
+		width: 100%;
+		border-top: 1px dashed rgba(27, 94, 84, 0.2);
+		position: relative;
+		padding: 60px 0 0 0;
+		&:before{
+			content: '';
+			border-top: 1px dashed rgba(255, 255, 255, 0.6);
+			position: absolute;
+			top: 2px;
+			width: 100%;
+		}
+
+		> .container_24{
+			position: relative;
+			> .grid_12.even{
+				margin-bottom: 45px;
+				h3,p{
+					padding-right: 15px;
+				}
+			}
+			> .grid_12.odd{
+				height: 100%;
+				border-left: 1px dashed rgba(255, 255, 255, 0.6);
+				position: relative;
+				width: 507px;
+				margin-bottom: 45px;
+				h3, p{
+					padding-left: 40px;
+				}
+				&:before{
+					content: '';
+					border-left: 1px dashed rgba(27, 94, 84, 0.2);
+					position: absolute;
+					left: -4px;
+					height: 100%;
+				}
+			}
+		}
+		.cogu{
+			background: url('../img/icons_internas.png') no-repeat -43px -451px;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			top: -130px;
+			right: 0px;
+			z-index: 99;
+		}
+		.cegonha{
+			background: url('../img/icons_internas.png') no-repeat -728px 14px;
+			width: 229px;
+			height: 207px;
+			position: absolute;
+			bottom: -31px;
+			left: 12px;
+			z-index: 99;
+		}
+		.corujinha{
+			background: url('../img/icons_internas.png') no-repeat -242px -451px;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			bottom: -24px;
+			right: -45px;
+			z-index: 99;
+		}
+		.fadinha{
+			background: url('../img/icons_internas.png') no-repeat -440px -441px;
+			width: 109px;
+			height: 112px;
+			position: absolute;
+			bottom: -20px;
+			left: 0px;
+			z-index: 99;
+		}
+		.joaninha{
+			background: url('../img/icons_internas.png') no-repeat -637px -441px;
+			width: 109px;
+			height: 112px;
+			position: absolute;
+			bottom: -48px;
+			right: 0px;
+			z-index: 99;
+		}
+	}
+
+	#Social{
+		margin-bottom: 70px;
+	}
+}
+#contato{
+	padding: 15px 0 40px 0;
+	span{
+		color: #702E1B;
+		font-size: 21px;
+		margin-left: 25px;
+	}
+	.labels{
+		padding: 0px;
+		list-style: none;
+		margin-left: 25px;
+		li{
+			color: #702E1B;
+			font-size: 21px;
+			margin-bottom: 10px;
+			height: 38px;
+		}
+	}
+	.form{
+		list-style: none;
+		li{
+			margin-bottom: 10px;
+			input[type=text], input[type=email], input[type=date]{
+				width: 464px;
+				height: 32px;
+				border: 1px solid #98D7CD;
+				-webkit-border-radius: 7px;
+				border-radius: 7px;
+				background-color: #D6EFEB;
+				padding-left: 5px;
+			}
+			input[type=date]{
+				margin-left: 25px;
+			}
+			textarea{
+				padding: 5px 0 0 5px;
+				border: 1px solid #98D7CD;
+				width: 464px;
+				height: 167px;
+				-webkit-border-radius: 7px;
+				border-radius: 7px;
+				background-color: #D6EFEB;
+			}
+			input[type=submit]{
+				background: url('../img/icons_internas.png') no-repeat -1243px -475px;
+				border: none;
+				width: 100px;
+				height: 45px;
+				float: right;
+				margin-right: 13px;
+			}
+			.wpcf7-not-valid-tip-no-ajax{
+				height: 0px;
+				margin-bottom: -23px;
+				font-size: 12px;
+				color: red;
+			}
+		}
+	}
+}
+@-moz-document url-prefix() {
+	#contato{
+		.form{
+			li{
+				.wpcf7-not-valid-tip-no-ajax{
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+.grid_precos{
+	.box{
+		border-right: 1px dashed rgba(255, 255, 255, 0.6);
+		position: relative;
+		min-height: 130px;
+		padding: 0 44px;
+		&:after{
+			content: '';
+			border-right: 1px dashed rgba(27, 94, 84, 0.2);
+			position: absolute;
+			right: 2px;
+			height: 100%;
+			width: 1px;
+			top: 0px;
+		}
+		&.odd{
+			border: none;
+			&:after{
+				border:none;
+			}
+		}
+	}
+	h3{
+		font-size: 26px;
+		font-family: 'myriad_proregular';
+		color: #702E1B;
+		margin-bottom: -5px;
+	}
+	ul li{
+		margin: 10px 0;
+		a{
+			font-size: 20px;
+			color: #702E1B;
+			&:hover{
+				font-weight: 700;
+			}
+		}
+	}
+}
+.wpcf7-validation-errors{
+	width: 326px;
+	position: relative;
+	top: -17px;
+	left: 58px;
+}

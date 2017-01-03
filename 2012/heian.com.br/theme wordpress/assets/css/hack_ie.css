@@ -1,0 +1,60 @@
+#menu ul li a {
+    text-shadow /*\**/: none; /* Internet Explorer 8 */
+    filter /*\**/: none; /* Internet Explorer 8 */
+}
+.sec {
+    margin-top /*\**/: 0px; /* Internet Explorer 8 */
+    _margin-top: 0px;
+}
+.sec h1 {
+    width /*\**/: 150px; /* Internet Explorer 8 */
+    _width: 150px;
+}
+form#login {
+    width /*\**/: 230px;
+    margin-top /*\**/: 70px; /* Internet Explorer 8 */
+    _margin-top: 90px;
+}
+a.botao {
+    padding /*\**/: 8px; /* Internet Explorer 8 */
+    height /*\**/: 35px; /* Internet Explorer 8 */
+    width /*\**/: 200px; /* Internet Explorer 8 */
+}
+.botaoie {
+    background-image /*\**/: url(../img/blg.jpg); /* Internet Explorer 8 */
+    display /*\**/: block; /* Internet Explorer 8 */
+    height /*\**/: 19px; /* Internet Explorer 8 */
+    width /*\**/: 200px; /* Internet Explorer 8 */
+    padding-top /*\**/: 8px; /* Internet Explorer 8 */
+    padding-left /*\**/: 12px; /* Internet Explorer 8 */
+    padding-bottom /*\**/: 8px; /* Internet Explorer 8 */
+}
+form#login fieldset input[type=text], form#login fieldset input[type=password] {
+    width /*\**/: 190px; /* Internet Explorer 8 */
+    height /*\**/: 21px; /* Internet Explorer 8 */
+    -webkit-border-radius /*\**/: 0px 5px 5px 0px; /* Internet Explorer 8 */
+    border-radius /*\**/: 0px 5px 5px 0px; /* Internet Explorer 8 */
+    float /*\**/: left; /* Internet Explorer 8 */
+    background-color /*\**/: #FFF; /* Internet Explorer 8 */
+    border /*\**/: 0px none #FFF; /* Internet Explorer 8 */
+    font-size /*\**/: 12px; /* Internet Explorer 8 */
+    color /*\**/: #656565; /* Internet Explorer 8 */
+    padding-left /*\**/: 5px; /* Internet Explorer 8 */
+    padding-top /*\**/: 5px; /* Internet Explorer 8 */
+}
+form#login fieldset input[type=submit].botao {
+    background-image: url(../img/blg.png);
+    border /*\**/: 0px none #FFF; /* Internet Explorer 8 */
+}
+.gform_wrapper .gfield_required {
+    color: #666;
+    margin-left: 4px;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+}
+#menufooter ul li {
+    float: left;
+    min-width: 28px;
+    padding: 5px;
+    font-size/*\**/: 11px; /* Internet Explorer 8 */
+}

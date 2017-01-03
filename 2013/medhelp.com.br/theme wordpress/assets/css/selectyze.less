@@ -1,0 +1,128 @@
+/************************************************************************
+*************************************************************************
+@Name :       	Selectyze - jQuery Plugin CSS
+@Revison :    	1.0
+@Date : 		19/12/2011
+@Author:     	Mickael SURREL - ALPIXEL Agency - (www.myjqueryplugins.com - www.alpixel.fr) 
+@License :		 Open Source - MIT License : http://www.opensource.org/licenses/mit-license.php
+
+**************************************************************************
+*************************************************************************/
+
+/***************************/
+/** Common to every theme **/
+/***************************/
+.DivSelectyze {
+	position:relative;
+	width:308px;
+	float:left;
+	//margin-left: 38px;
+}
+
+.DivSelectyze .selectyzeValue {
+	position:relative;
+	z-index:10;
+	display:block;
+	text-decoration:none;
+}
+
+.DivSelectyze ul {list-style:none;}
+.DivSelectyze .UlSelectize {
+	position:absolute;
+	z-index:9999;
+	display:none;
+}
+
+.DivSelectyze li a {
+	display:block;
+	text-decoration:none;
+}
+
+.optgroupTitle {
+	display:block;
+}
+/*******************************/
+/** END COMMON TO EVERY THEME **/
+/*******************************/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/*----------------------------------
+You can add your own theme below !!
+To add your theme, be sure to have 5 CSS elements :
+
+.your_theme .selectyzeValue {} 		-> Appearance of your select element
+.your_theme .UlSelectize {} 			-> Appearance of the dropdown list
+.your_theme li a {} 					-> Appearance of the items into the dropdown list
+.your_theme li a:hover {} 				-> items on hover
+.your_theme .optgroupTitle {} 			-> Appearance of the optgroup label !! only if you have <optgroup> element into your list 
+
+
+that's all ! \o/
+----------------------------------*/
+
+
+/*****************/
+/** MAC THEME **/
+/*****************/
+
+.mac .selectyzeValue {
+	
+	color:#FFF;
+	height:35px;
+	line-height: 35px;
+	width: 72px;
+	background:url('../img/selectize/bg_medhelp.png') no-repeat;
+	padding-left: 10px;
+	.font(os);
+    .tam(13px);
+    font-style: italic;
+}
+
+.mac .UlSelectize {
+	top:25px;
+	left:0px;
+	width:320px;
+	padding: 15px;
+	box-sizing: box-border;
+	border-radius: 10px;
+	border:1px solid #4396CA;
+	background-color: #FFF;
+}
+
+.mac li{
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	a {
+		box-sizing: box-border;
+		height:14px;
+		.font(os);
+    	.tam(12px);
+		color:#4396CA;
+		padding: 5px;
+	}
+} 
+
+.mac li a:hover {
+	color:#FFF;
+	background-color:#4396CA;/** gradient bgcolors */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(149, 176, 213, 0.8)), to(rgba(149, 176, 213, 0.2))); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, rgba(149, 176, 213, 0.8), rgba(149, 176, 213, 0.2)); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, rgba(149, 176, 213, 0.8), rgba(149, 176, 213, 0.2)); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, rgba(149, 176, 213, 0.8), rgba(149, 176, 213, 0.2)); /* IE10 */
+	background-image:      -o-linear-gradient(top, rgba(149, 176, 213, 0.8), rgba(149, 176, 213, 0.2)); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, rgba(149, 176, 213, 0.8), rgba(149, 176, 213, 0.2));
+	border-radius: 10px;
+}
+
+.mac .optgroupTitle {
+	margin-top:8px;
+	font-size:10px;
+	padding-left:10px;
+	background-color:#0fb1ef;
+	color:#000;
+}

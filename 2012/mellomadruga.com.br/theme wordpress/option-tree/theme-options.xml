@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<wp_option_tree>
+  <row>
+    <id>1</id>
+    <item_id>general_default</item_id>
+    <item_title>Background</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>1</item_sort>
+  </row>
+  <row>
+    <id>4</id>
+    <item_id>hp_bg</item_id>
+    <item_title>Homepage Background</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>2</item_sort>
+  </row>
+  <row>
+    <id>39</id>
+    <item_id>archive_bg</item_id>
+    <item_title>Archive &amp;amp; Category Page Background</item_title>
+    <item_desc></item_desc>
+    <item_type>upload</item_type>
+    <item_options></item_options>
+    <item_sort>3</item_sort>
+  </row>
+  <row>
+    <id>3</id>
+    <item_id>logo</item_id>
+    <item_title>Logo &amp;amp; Menu</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>4</item_sort>
+  </row>
+  <row>
+    <id>2</id>
+    <item_id>custom_logo_img</item_id>
+    <item_title>Logo image</item_title>
+    <item_desc>Upload an image if you wish to use a custom logo.</item_desc>
+    <item_type>upload</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>5</item_sort>
+  </row>
+  <row>
+    <id>28</id>
+    <item_id>menu_right</item_id>
+    <item_title>Right Menu Text</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>6</item_sort>
+  </row>
+  <row>
+    <id>5</id>
+    <item_id>top_bar_icons</item_id>
+    <item_title>Social Icons &amp;amp; Searchbar</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>7</item_sort>
+  </row>
+  <row>
+    <id>27</id>
+    <item_id>searchbar</item_id>
+    <item_title>Display Searchbar?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>8</item_sort>
+  </row>
+  <row>
+    <id>6</id>
+    <item_id>twitter_icon</item_id>
+    <item_title>Twitter icon?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>9</item_sort>
+  </row>
+  <row>
+    <id>7</id>
+    <item_id>twitter_url</item_id>
+    <item_title>Twitter ID</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>10</item_sort>
+  </row>
+  <row>
+    <id>8</id>
+    <item_id>facebook_icon</item_id>
+    <item_title>Facebook icon?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>11</item_sort>
+  </row>
+  <row>
+    <id>9</id>
+    <item_id>facebook_url</item_id>
+    <item_title>Facebook URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>12</item_sort>
+  </row>
+  <row>
+    <id>29</id>
+    <item_id>dribbble_icon</item_id>
+    <item_title>Google+ Icon?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>13</item_sort>
+  </row>
+  <row>
+    <id>30</id>
+    <item_id>dribbble_url</item_id>
+    <item_title>Google+ URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>14</item_sort>
+  </row>
+  <row>
+    <id>31</id>
+    <item_id>youtube_icon</item_id>
+    <item_title>YouTube Icon?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>15</item_sort>
+  </row>
+  <row>
+    <id>32</id>
+    <item_id>youtube_url</item_id>
+    <item_title>YouTube URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>16</item_sort>
+  </row>
+  <row>
+    <id>33</id>
+    <item_id>vimeo_icon</item_id>
+    <item_title>Pinterest Icon?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>17</item_sort>
+  </row>
+  <row>
+    <id>34</id>
+    <item_id>vimeo_url</item_id>
+    <item_title>Pinterest URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>18</item_sort>
+  </row>
+  <row>
+    <id>35</id>
+    <item_id>linkedin_icon</item_id>
+    <item_title>LinkedIn Icon?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>19</item_sort>
+  </row>
+  <row>
+    <id>36</id>
+    <item_id>linkedin_url</item_id>
+    <item_title>LinkedIn URL</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>20</item_sort>
+  </row>
+  <row>
+    <id>22</id>
+    <item_id>slider</item_id>
+    <item_title>Homepage Slider</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>21</item_sort>
+  </row>
+  <row>
+    <id>26</id>
+    <item_id>slider_onoff</item_id>
+    <item_title>Display Slider?</item_title>
+    <item_desc></item_desc>
+    <item_type>radio</item_type>
+    <item_options>Yes,No</item_options>
+    <item_sort>22</item_sort>
+  </row>
+  <row>
+    <id>23</id>
+    <item_id>slides</item_id>
+    <item_title>Slides</item_title>
+    <item_desc></item_desc>
+    <item_type>slider</item_type>
+    <item_options></item_options>
+    <item_sort>23</item_sort>
+  </row>
+  <row>
+    <id>37</id>
+    <item_id>portfolio</item_id>
+    <item_title>Portfolio</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>24</item_sort>
+  </row>
+  <row>
+    <id>38</id>
+    <item_id>fullportfolio</item_id>
+    <item_title>Page for &amp;quot;Full Portfolio&amp;quot; icon</item_title>
+    <item_desc></item_desc>
+    <item_type>page</item_type>
+    <item_options></item_options>
+    <item_sort>25</item_sort>
+  </row>
+  <row>
+    <id>24</id>
+    <item_id>footer</item_id>
+    <item_title>Footer</item_title>
+    <item_desc></item_desc>
+    <item_type>heading</item_type>
+    <item_options></item_options>
+    <item_sort>26</item_sort>
+  </row>
+  <row>
+    <id>25</id>
+    <item_id>footer_text</item_id>
+    <item_title>Footer Text</item_title>
+    <item_desc></item_desc>
+    <item_type>input</item_type>
+    <item_options></item_options>
+    <item_sort>27</item_sort>
+  </row>
+</wp_option_tree>

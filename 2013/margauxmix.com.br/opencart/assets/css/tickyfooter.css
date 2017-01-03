@@ -1,0 +1,1 @@
+html,body{height:100%}#wrap{min-height:100%;width:100%;position:relative}#main{padding-bottom:392px}#footer{position:relative;margin-top:-392px;height:392px;clear:both;z-index:3}body:before{content:"";height:100%;float:left;width:0;margin-top:-32767px}

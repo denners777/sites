@@ -1,0 +1,775 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* PERSONALIZACAO */
+
+/*GERAL*/
+body {
+	background: #fff;
+	font: 12px Arial;
+	line-height: 20px
+}
+a {
+	text-decoration: none;
+	cursor: pointer
+}
+h1 a {
+	width: 312px;
+	height: 74px;
+	background: url(../imagens/logo-mellomadruga.gif) no-repeat left;
+	text-indent: -1500em;
+	float: left
+}
+h4 {
+	font: normal 20px Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	background: url(../imagens/bg-tracos.gif) repeat-x 0 9px
+}
+h4 span {
+	background: #fff;
+	padding-right: 15px
+}
+.clear {
+	clear: both
+}
+.w100 {
+	width: 100px
+}
+.w110 {
+	width: 110px
+}
+.w150 {
+	width: 150px
+}
+.w180 {
+	width: 180px
+}
+.box_esq {
+	width: 456px;
+	float: left
+}
+.box_dir {
+	width: 460px;
+	float: right
+}
+.tracos_bco {
+	background: url(../imagens/bg-tracos-bco.gif) repeat-x;
+	height: 9px;
+	margin: 28px 0
+}
+/*HEADERS*/
+.header {
+	margin: 0 auto;
+	padding-top: 27px;
+	border-bottom: 7px solid #d7d7d7;
+	color: #fff
+}
+.logo {
+	margin-top: 25px;
+	float:left;
+}
+
+#corpo #contato .transp {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 250px;
+}
+#corpo #contato .bg {
+	background-color: rgba(0, 0, 0, 0.7);
+	background-image: url(../imagens/bg-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center -40px;
+	width: 100%;
+	height: 250px;
+	margin-top: -27px;
+}
+#corpo #contato .bg2 {
+	background-color: #000;
+	margin-top: -20px;
+}
+#corpo #contato .bg .transp .recado {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 30px;
+	float: left;
+	margin-top: 215px;
+	margin-left: -495px;
+}
+.voltar a{
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #FF6500;
+	float: right;
+	margin-top: 215px;
+}
+.header .celula {
+	width: 950px;
+	padding-right: 25px;
+	margin: 0 auto;
+}
+.header .linha {
+	height: 1px;
+	background: #262626;
+	margin: 20px 0 40px
+}
+.header h3 {
+	font: normal 15px Georgia, "Times New Roman", Times, serif;
+	color: #ff6500;
+	text-transform: uppercase;
+	margin-bottom: 11px
+}
+#header_home {
+	padding-bottom: 196px
+}
+/*MENU*/
+.item {
+	float: right
+}
+.item a {
+	color: #ff6500;
+	font-size: 10px;
+	display: block;
+	float: left;
+	padding: 5px 6px 0 6px;
+	height: 15px;
+	width: 80px;
+	border: 1px solid #464646;
+	line-height: normal;
+	margin-left: 6px;
+	cursor: pointer;
+	/*background: #000 url(../imagens/ico-setas.gif) no-repeat -38px 1px*/
+}
+#menu.item a {
+	width: 91px;
+	height: 30px;
+	padding: 0;
+	font-size: 12px;
+	text-indent: 14px;
+	line-height: 30px;
+	background-position: -22px 6px
+}
+.item a:hover, #menu.item a:hover {
+	color: #fff
+}
+.item a.topo {
+	background-position: -130px 0
+}
+#m_portfolio {
+	font: normal 18px Georgia;
+	height: 43px;
+	margin-top: 50px
+}
+#m_portfolio li {
+	width: 189px;
+	height: 43px;
+	float: left;
+	border-right: 1px solid #363636
+}
+#m_portfolio li.prim {
+	border-left: 1px solid #363636;
+	width: 188px
+}
+#m_portfolio li.prim a {
+	border-left: 2px solid #363636;
+	width: 167px
+}
+#m_portfolio a {
+	color: #ff6500;
+	float: right;
+	display: block;
+	border-right: 2px solid #363636;
+	padding-right: 17px;
+	height: 30px;
+	text-align: right;
+	width: 171px
+}
+#m_portfolio a:hover, #m_portfolio a.on {
+	color: #fff
+}
+#m_portfolio a:hover.on {
+	color: #ff6500;
+}
+#m_portfolio a small {
+	font-size: 14px
+}
+/*MIOLOS*/
+.miolo {
+	margin: 30px auto 10px
+}
+.miolo .dir {
+	float: right
+}
+.miolo .celula {
+	width: 950px;
+	padding-right: 25px;
+	margin: 0 auto
+}
+.miolo .linha {
+	height: 1px;
+	background: #e1e1e1;
+	margin: 20px 0 30px
+}
+.miolo .subtit {
+	font: oblique 20px Georgia, "Times New Roman", Times, serif;
+	color: #636363
+}
+.miolo .subtit span {
+	color: #acacac
+}
+#miolo_home {
+	margin: -203px auto 50px;
+	width: 950px;
+	padding-right: 25px
+}
+/*DEST GDE*/
+.dest_gde {
+	position: relative;
+	width: 453px;
+	height: 295px;
+	border: 1px solid #d7d7d7;
+	padding: 6px;
+	background: #fff;
+	text-transform: uppercase;
+	float: left;
+	margin-bottom: 25px
+}
+.dest_gde img {
+	display: block;
+	width: 453px;
+	height: 243px
+}
+.dest_gde p {
+	padding-top: 11px;
+	font: bold 11px Arial;
+}
+.dest_gde p span {
+	font-weight: normal;
+	color: #464646
+}
+.dest_gde a.mais {
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	width: 34px;
+	height: 34px;
+	background: url(../imagens/ico-mais1.gif) no-repeat;
+	text-indent: -1500em
+}
+.dest_gde a.mais:hover {
+	background-image: url(../imagens/ico-mais1over.gif)
+}
+/*DEST PEQ*/
+.dest_peq {
+	position: relative;
+	width: 213px;
+	height: 159px;
+	border: 1px solid #d7d7d7;
+	padding: 5px;
+	background: #fff;
+	float: left;
+	margin: 0 16px 45px 0
+}
+.dest_peq img {
+	display: block;
+	width: 213px;
+	height: 119px
+}
+.dest_peq p {
+	color: #252525;
+	padding-top: 9px;
+	font: bold 12px Arial
+}
+.dest_peq p span {
+	font-weight: normal;
+	color: #898989
+}
+.dest_peq a.mais {
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	width: 26px;
+	height: 26px;
+	background: url(../imagens/ico-mais2.gif) no-repeat;
+	text-indent: -1500em
+}
+div.ult {
+	margin-right: 0
+}
+.dest_peq a.mais:hover {
+	background-image: url(../imagens/ico-mais2over.gif)
+}
+.outros {
+	margin: 0 0 45px 16px;
+	float: right
+}
+/*DEST MAT*/
+.dest_mat {
+	color: #464646
+}
+.dest_mat strong {
+	color: #000
+}
+.dest_mat img {
+	display: block;
+	width: 940px;
+	height: 413px;
+	padding: 4px;
+	border: 1px solid #d7d7d7
+}
+.dest_mat a {
+	position: relative;
+	display: block
+}
+.dest_mat a:hover span.zoom {
+	display: block;
+	width: 170px;
+	height: 170px;
+	background: url(../imagens/ico-zoom.png) no-repeat;
+	position: absolute;
+	top: 136px;
+	left: 390px
+}
+.dest_mat div {
+	height: 22px;
+	padding: 8px 0 7px;
+	line-height: 22px;
+	border-bottom: 1px dashed #d7d7d7;
+	margin-bottom: 15px
+}
+.dest_mat div, .dest_mat strong {
+	text-transform: uppercase;
+}
+.dest_mat div.nobrdr {
+	border: none
+}
+.dest_mat a.foto_esconde {
+	display: none
+}
+.dest_mat div p {
+	float: left
+}
+.dest_mat div p.nav_foto {
+	float: right
+}
+.dest_mat div p.nav_foto span, .dest_mat div p.nav_foto a {
+	display: block;
+	float: left;
+	border: 1px solid #ccc;
+	height: 20px;
+	margin-left: 4px;
+	font-size: 10px;
+	color: #000
+}
+.dest_mat div p.nav_foto span {
+	padding: 0 10px;
+	text-align: center
+}
+.dest_mat div p.nav_foto b {
+	font-weight: normal
+}
+.dest_mat div p.nav_foto a {
+	width: 20px;
+	background: #000 url(../imagens/ico-setas-nav.gif) no-repeat center -23px;
+	text-indent: -1500em
+}
+.dest_mat div p.nav_foto a.prox {
+	background-position: 7px -1px;
+}
+.dest_mat div p.nav_foto a.zoom {
+	background-position: 5px -48px;
+}
+.dest_mat li {
+	padding-bottom: 20px
+}
+.dest_mat li.padding {
+	padding-top: 15px
+}
+.dest_mat ul {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px
+}
+/*NEWS*/
+#news li {
+	float: left;
+	width: 197px;
+	height: 136px;
+	background: url(../imagens/bg-twitter.gif) no-repeat;
+	padding: 14px 14px 0;
+	margin-right: 16px;
+	line-height: 17px
+}
+#news li small {
+	font-size: 11px;
+	color: #898989;
+	line-height: 25px
+}
+#news li.ult {
+	margin-right: 0
+}
+.twitter {
+	position: relative
+}
+.twitter .item {
+	position: absolute;
+	right: 0;
+	top: -3px
+}
+.twitter .item a {
+	background: #000 url(../imagens/ico-twitter.gif) no-repeat right
+}
+/*FESTAS*/
+.festas p {
+	padding-bottom: 16px;
+	color: #464646
+}
+
+/*CONTATO*/
+#contato {
+	border-top: 7px solid #d7d7d7;
+	border-bottom: none;
+	/*padding-bottom: 27px*/
+}
+.redes a {
+	display: block;
+	float: left;
+	background: url(../imagens/ico-redes.gif) no-repeat left;
+	width: 30px;
+	height: 30px;
+	text-indent: -1500em;
+	margin-right: 20px
+}
+.redes a.facebook {
+	background-position: -50px 0
+}
+.redes a.orkut {
+	background-position: -100px 0
+}
+.redes a.youtube {
+	background-position: -149px 0
+}
+.redes a.flickr {
+	background-position: -199px 0
+}
+.quote {
+	color: #ff6500;
+	font: normal 16px Georgia, "Times New Roman", Times, serif;
+	line-height: 24px
+}
+.quote cite {
+	color: #fff;
+	font-size: 15px
+}
+.telmail li {
+	float: left;
+	font: normal 18px Georgia;
+	line-height: 22px;
+	padding-right: 40px
+}
+.telmail li small {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #959595
+}
+.telmail a {
+	color: #fff
+}
+form {
+	font-size: 11px;
+	padding-top: 20px
+}
+form li {
+	padding-bottom: 12px;
+	float: left;
+	line-height: 20px
+}
+form li label {
+	width: 73px;
+	display: block;
+	float: left
+}
+form li label.nowd {
+	width: auto;
+	padding: 0 7px 0 20px
+}
+form label.retorno {
+	width: auto;
+	padding: 0 10px;
+	color: #FF6500;
+	font-size: 10px
+}
+form li.dir {
+	float: right
+}
+form input, form textarea {
+	width: 380px;
+	float: left;
+	height: 16px;
+	background: #000;
+	border: 1px solid #363636;
+	color: #fff
+}
+form textarea {
+	width: 378px;
+	height: 106px
+}
+form #ddd1_ct, form #ddd2_ct {
+	width: 26px;
+	margin-right: 6px
+}
+form #tel1_ct, form #tel2_ct {
+	width: 120px
+}
+form .botao {
+	width: 116px;
+	color: #ff6500;
+	text-align: left;
+	text-indent: 7px;
+	height: 20px;
+	margin-right: 2px;
+	background: url(../imagens/ico-setas.gif) no-repeat 93px 0px
+}
+form .botao:hover {
+	color: #fff
+}
+form .file {
+	height: 18px
+}
+iframe#cv_form {
+	display: none
+}
+p.cv {
+	font-size: 11px
+}
+.box_esq_cv {
+	width: 520px
+}
+.box_dir_cv {
+	width: 396px
+}
+form.cv label {
+	width: 91px
+}
+form.cv label#retorno_cv {
+	width: auto;
+	padding: 10px 0 0 0;
+	height: 10px
+}
+form.cv input {
+	width: 290px
+}
+form.cv .botao {
+	width: 115px;
+	margin-left: 7px
+}
+form.promotores {
+	padding-bottom: 40px
+}
+form.promotores .box_dir {
+	width: 470px
+}
+form.promotores ul {
+	float: left
+}
+form.promotores li {
+	padding-bottom: 8px;
+	line-height: 16px
+}
+form.promotores li label {
+	font-weight: normal;
+	height: 16px
+}
+form.promotores li span {
+	padding: 0 10px 0 5px;
+	float: left
+}
+form.promotores label {
+	width: 91px
+}
+form.promotores input {
+	width: 360px
+}
+form.promotores input.botao {
+	width: 116px;
+	font-size: 10px;
+	text-indent: 0;
+	margin-left: 91px
+}
+form.promotores select {
+	width: 148px;
+	float: left;
+	text-transform: lowercase
+}
+form.promotores small {
+	font-size: 10px;
+	color: #FF6500
+}
+form.promotores p.obr {
+	padding: 3px 0 0 91px
+}
+#cad_promotores fieldset ul li label.error {
+	display: none !important
+}
+#jquery-lightbox {
+	top: 105.5px !important
+}
+form.promotores label.lbx {
+	width: 58px;
+	padding-right: 7px;
+	text-align: right
+}
+form.promotores label.lbnw {
+	width: auto;
+	padding-left: 24px
+}
+form.promotores label.lbid {
+	width: 50px;
+	margin-left: -26px
+}
+form.promotores label.lbid2 {
+	width: 87px
+}
+form.promotores li.col2 input {
+	width: 146px
+}
+form.promotores input.erro {
+	border-color: #FF6500
+}
+form.promotores .pt2 strong {
+	display: block;
+	float: left;
+	font-weight: normal;
+	width: 145px
+}
+form.promotores .pt2 input {
+	width: auto;
+	border: none;
+	margin-top: 0
+}
+form.promotores .pt2 input.file {
+	border: 1px solid #363636;
+	margin: 8px 0 0 91px
+}
+form.promotores .pt2 input.botao {
+	border: 1px solid #363636;
+	background: none;
+	font-size: 9px
+}
+form.promotores .pt2 label {
+	width: 60px
+}
+form.promotores .pt2 label.duplo {
+	width: 138px
+}
+form.promotores .pt2 label.auto {
+	width: auto
+}
+form.promotores .pt2 label.lbl_fotos {
+	width: 90px
+}
+form.promotores .pt2 li {
+	height: 20px
+}
+form.promotores .pt2 li.notit {
+	padding-left: 145px
+}
+form.promotores .pt2 li#fotos_promo {
+	height: auto
+}
+form.promotores #fotoctrl {
+	display: none
+}
+#tel1_ddd, #tel2_ddd, #tel3_ddd {
+	width: 26px;
+	margin-right: 4px
+}
+#tel1, #tel2, #tel3 {
+	width: 112px
+}
+#dia_nasc, #mes_nasc, #altura_m, #altura_cm, #oculos {
+	width: 49px
+}
+#ano_nasc {
+	width: 63px
+}
+#cabelo_t {
+	width: 108px
+}
+#pele, #oculos, #cabelo_t, #piercing1, #piercing2 {
+	float: right
+}
+#ingles, #alemao, #frances, #espanhol, #japones {
+	width: 118px
+}
+#promo_form {
+	width: 1px;
+	height: 1px;
+	display: none
+}
+/*EMPRESA*/
+.slide {
+	display: none;
+	position: relative;
+	padding: 45px 0 16px;
+	background: #ff7800;
+	color: #fff
+}
+.slide p {
+	padding-bottom: 26px
+}
+.slide .celula {
+	width: 950px;
+	padding-right: 25px;
+	margin: 0 auto
+}
+.slide h4 {
+	background: none;
+	font-size: 15px
+}
+.slide p.cite {
+	font: oblique 20px Georgia, "Times New Roman", Times, serif
+}
+.slide p.item {
+	margin-top: -25px
+}
+.slide p.item a {
+	background-position: -323px 0
+}

@@ -1,0 +1,315 @@
+### Adobe ###
+# Adobe Source Files
+*.psd
+*.ai
+*.indd
+*.prproj
+*.aep
+
+
+### AptanaStudio ###
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+
+### CodeIgniter ###
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+### CodeIgniter Patch ###
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
+
+
+### WordPress ###
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+
+
+
+### Magento ###
+.htaccess.sample
+.modgit/
+.modman/
+app/code/community/Phoenix/Moneybookers/
+app/code/community/Cm/RedisSession/
+app/code/core/
+app/design/adminhtml/default/default/
+app/design/frontend/base/
+app/design/frontend/rwd/
+app/design/frontend/default/blank/
+app/design/frontend/default/default/
+app/design/frontend/default/iphone/
+app/design/frontend/default/modern/
+app/design/frontend/enterprise/default
+app/design/install/
+app/etc/modules/Enterprise_*
+app/etc/modules/Mage_*.xml
+app/etc/modules/Phoenix_Moneybookers.xml
+app/etc/modules/Cm_RedisSession.xml
+app/etc/applied.patches.list
+app/etc/config.xml
+app/etc/enterprise.xml
+app/etc/local.xml.additional
+app/etc/local.xml.template
+app/etc/local.xml
+app/.htaccess
+app/bootstrap.php
+app/locale/en_US/
+app/Mage.php
+/cron.php
+cron.sh
+dev/.htaccess
+dev/tests/functional/
+downloader/
+errors/
+favicon.ico
+/get.php
+includes/
+/index.php
+index.php.sample
+/install.php
+js/blank.html
+js/calendar/
+js/enterprise/
+js/extjs/
+js/firebug/
+js/flash/
+js/index.php
+js/jscolor/
+js/lib/
+js/mage/
+js/prototype/
+js/scriptaculous/
+js/spacer.gif
+js/tiny_mce/
+js/varien/
+lib/3Dsecure/
+lib/Apache/
+lib/flex/
+lib/googlecheckout/
+lib/.htaccess
+lib/LinLibertineFont/
+lib/Mage/
+lib/PEAR/
+lib/Pelago/
+lib/phpseclib/
+lib/Varien/
+lib/Zend/
+lib/Cm/
+lib/Credis/
+lib/Magento/
+LICENSE_AFL.txt
+LICENSE.html
+LICENSE.txt
+LICENSE_EE*
+/mage
+media/
+/api.php
+nbproject/
+pear
+pear/
+php.ini.sample
+pkginfo/
+RELEASE_NOTES.txt
+shell/.htaccess
+shell/abstract.php
+shell/compiler.php
+shell/indexer.php
+shell/log.php
+sitemap.xml
+skin/adminhtml/default/default/
+skin/adminhtml/default/enterprise
+skin/frontend/base/
+skin/frontend/rwd/
+skin/frontend/default/blank/
+skin/frontend/default/blue/
+skin/frontend/default/default/
+skin/frontend/default/french/
+skin/frontend/default/german/
+skin/frontend/default/iphone/
+skin/frontend/default/modern/
+skin/frontend/enterprise
+skin/install/
+var/
+
+### Magento Patch ###
+dev/tests/functional
+
+
+### OpenCart ###
+.htaccess
+/config.php
+admin/config.php
+
+!index.html
+
+download/
+image/data/
+image/cache/
+system/cache/
+system/logs/
+
+system/storage/
+
+# vQmod log files
+vqmod/logs/*
+# vQmod cache files
+vqmod/vqcache/*
+vqmod/checked.cache
+vqmod/mods.cache
+
+
+### Images ###
+# JPEG
+.jpg
+.jpeg
+.jpe
+.jif
+.jfif
+.jfi
+
+# JPEG 2000
+.jp2
+.j2k
+.jpf
+.jpx
+.jpm
+.mj2
+
+# JPEG XR
+.jxr
+.hdp
+.wdp
+
+# Graphics Interchange Format
+.gif
+
+# RAW
+.raw
+
+# Web P
+.webp
+
+# Portable Network Graphics
+.png
+
+# Animated Portable Network Graphics
+.apng
+
+# Multiple-image Network Graphics
+.mng
+
+# Tagged Image File Format
+.tiff
+.tif
+
+# Scalable Vector Graphics
+.svg
+.svgz
+
+# Portable Document Format
+.pdf
+
+# X BitMap
+.xbm
+
+# BMP
+.bmp
+.dib
+
+# ICO
+.ico
+
+.DS_Store
+
+#videos
+.mp4
+.avi
+.rmvb
+.mpeg
+.str
+.webm
+.ogv
+
+
+.fla
+.as
+
+#audio
+.mp3
+.wav
+.wmp
+
+.zip

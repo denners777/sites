@@ -1,0 +1,321 @@
+@import 'fonts/stylesheet.css';
+@import 'normalize.less';
+@import '960.custom.less';
+@import 'boilerplate.less';
+
+.getBackground(@IMG){ background: no-repeat url("../img/@{IMG}"); }
+
+.BordaRedonda(@PX: 5px){
+	-webkit-border-radius: @PX;
+	border-radius: @PX;
+}
+
+.Font (@Peso) when (@Peso = 0){ font-family: 'lane_-_narrowregular'; }
+.Font (@Peso) when (@Peso = 1){ font-family: 'myriad_proregular'; }
+
+@AzulFundo: #C8E8E3;
+@VerdeMenu: rgba(104, 143, 103, 0.48);
+@VerdeSubMenu: rgba(104, 143, 103, 0.9);
+@Roxo: #784b87;
+@Bordo: #702d1b;
+
+
+html, body, #wrap {height: 100%;}
+
+body > #wrap {height: auto; min-height: 100%;}
+
+.mainpage{overflow:auto;
+	padding-bottom: 45px;}  /* deve ter a mesma altura do rodapé */
+
+
+	/*Opera Fix*/
+	body:before {
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;
+	}
+
+
+/*
+Autor 	Luiz Vinicius luiz.vinicius73@gmail.com
+Denner Fernandes denners777@hotmail.com
+*/
+body{
+	background-color: @AzulFundo; 
+	.Font(0);
+	color: @Bordo;
+}
+
+a{
+	cursor: pointer;
+	&,&:hover{
+		text-decoration: none;
+	}
+}
+
+#Logo{
+	.getBackground('logo.png');
+	height: 180px;
+}
+
+#header{
+	.getBackground('header_linha.png');
+	background-position: bottom center;
+}
+
+#Menu{
+	margin-top: 25px;
+	padding-bottom: 10px;
+	ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	li{
+		display: inline-block;
+		height: 133px;
+		width: 95px;
+		text-align: center;
+		margin-left: -6px;
+		.Font(1);
+		font-size: 18px;
+		.getBackground('menu_icons.png');
+		background-position: left top;
+		cursor: pointer;
+		&:hover, &.current-menu-item{
+			background-position-y: -146px;
+			a{
+				color: #fff;
+			}
+		}
+		&.festa{
+			background-position-x: -93px;
+			width: 83px;
+		}
+		&.baby{
+			background-position-x: -175px;
+			width: 93px;
+		}
+		&.papelaria{
+			background-position-x: -267px;
+			width: 97px;
+		}
+		&.casamento{
+			background-position-x: -363px;
+			width: 120px;
+		}
+		&.logomarca{
+			background-position-x: -482px;
+			width: 118px;
+		}
+		&.photobook{
+			background-position-x: -599px;
+			width: 118px;
+		}
+		&.revenda{
+			background-position-x: -716px;
+			width: 92px;
+		}
+
+		a{
+			line-height: 50px;
+			color: @Roxo;
+			padding: 10px 16px 96px 16px;
+			-webkit-transition: all 600ms ease-in-out;
+			-moz-transition: all 600ms ease-in-out;
+			-ms-transition: all 600ms ease-in-out;
+			-o-transition: all 600ms ease-in-out;
+			transition: all 600ms ease-in-out;
+		}
+		&.drop{
+			position: relative;
+			&:hover ul{
+				display:inline-block;
+			}
+			ul{
+				background-color: @VerdeSubMenu;
+				display: none;
+				position: absolute;
+				top: 128px;
+				left: 0px;
+				min-width: 85px;
+				width: 100%;
+				z-index: 999;
+				margin: 0px;
+				padding: 0px;
+				li{
+					display: inline-block;
+					background-image: none;
+					height: 30px;
+					border-bottom: 1px dashed #FFF;
+					padding: 5px 0px;
+					margin: 0px auto;
+					width: 85%;
+					&:last-child{
+						border-bottom:none;
+					}
+					&:hover{
+						background-color: @VerdeMenu;
+					}
+					a{
+						background-image: none;
+						display: block;
+						font-size: 11px;
+						line-height: 30px;
+						color: #FFF;
+						margin: 0px;
+						padding: 0;
+						&:hover{
+							color: @Roxo;
+							background-color: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#Slider{
+	height: 330px;
+	background-image: url('../img/slider_fundo.png');
+	background-repeat: repeat-x;
+	nav{
+		height: 330px;
+		position: relative;
+		.getBackground('slider_passaro.png');
+		background-position: bottom;
+		.navi{
+			position: absolute;
+			bottom: 50px;
+			left: 70px;
+			> span{
+				.getBackground('nav_slider.png');
+				background-position: top left;
+				padding: 0px 15px 0px 0px;
+				margin-right: 10px;
+				display: inline-block; 
+				border: 0; 
+				text-indent: -999em; 
+				overflow: hidden;
+				text-align: left; 
+				direction: ltr; 
+				*line-height: 0;
+				cursor: pointer;
+				&.cycle-pager-active{
+					background-position-x:-18px;
+				}
+			}
+		}
+	}
+	.item{
+		position: relative;
+		figure{
+			margin: 20px 0 0 35px;
+			img{
+				max-width: 755px;
+			}
+		}
+	}
+	.grid_19{
+		height: 370px;
+	}
+}
+
+.mainpage{
+	h1{
+		font-weight: normal;
+		font-size: 36px;
+		margin: 10px 0px;
+	}
+	ul{
+		list-style-image: url('../img/ul_bullet.png');
+		margin: 0px;
+		padding-left: 15px;
+		li{
+			font-size: 20px;
+			line-height: 40px;
+		}
+	}
+
+	&#Home{
+		margin-top: 20px;
+	}
+}
+
+#footer{
+	height: 45px;
+	background-color: @Roxo;
+	position: relative;
+	margin-top: -45px; /* valor negativo da altura do rodapé */
+	clear:both;
+	p{
+		font-size: 10px;
+		padding-left: 30px;
+		color: #fff;
+		margin-top: 15px;
+	}
+
+	.conecte{
+		height: 28px;
+		.getBackground('conecte.png');
+		margin-top: 5px;
+	}
+}
+
+#Social{
+	margin-top: 25px;
+	.ir{
+		height: 60px;
+		width: 60px;
+		.getBackground('social_icons.png');
+		display: block;
+		&.facebook{
+			background-position: 0px;
+		}
+		&.pintrest{
+			background-position: -120px;
+		}
+		&.email{
+			background-position: -240px;
+		}
+		&.duvidas{
+			background-position: -360px;
+		}
+	}
+
+	ul{
+		margin: 0px;
+		padding: 0px;
+	}
+	li{
+		display: inline-block;
+		margin-right: 15px;
+		a.fita{
+			position: relative;
+			top: -26px;
+			left: 9px;
+		}
+	}
+}
+
+.fita{
+	.getBackground('fita.png');
+	height: 37px;
+	color: #fff;
+	background-position: right;
+	font-size: 18px;
+	line-height: 37px;
+	padding: 0px 23px 0px 10px;
+	display: inline-block;
+}
+.orcamento{
+	width: 271px;
+	height: 401px;
+	.getBackground('orcamento.png');
+	background-position-x:0px;
+	&:hover{
+		background-position-x:-303px;
+	}
+}

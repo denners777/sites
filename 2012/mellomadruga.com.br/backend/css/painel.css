@@ -1,0 +1,162 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* PERSONALIZACAO */
+
+/*CORPO*/
+body{background-color:#F9F9F9;font:12px Arial}
+h1{font-size:36px;letter-spacing:-1px;margin-bottom:15px;border-bottom:1px solid #999;padding-bottom:5px}
+h2{font:oblique 24px Arial;letter-spacing:-1px;padding-bottom:20px;color:#666}
+h3{font:normal 14px Arial;padding-bottom:20px;color:#666}
+h1 small{font-size:18px}
+a{text-decoration:none;color:#666;cursor:pointer}
+a:hover{color:#C00}
+.clear{clear:both}
+input.botao{font:bold 14px Arial;width:auto;background:#069;color:#fff;padding:5px;border:none;padding:4px 8px}
+fieldset input,fieldset textarea{font-size:12px;padding:3px;border:1px solid #999;font:12px Arial}
+fieldset cite{font:oblique 11px Arial;color:#666}
+fieldset input.botao{background:#C00;font-size:12px}
+fieldset td{padding:2px 0 6px}
+fieldset .tit{font-weight:bold;padding-right:10px}
+fieldset label.error{font-size:11px;color:#C00;padding:4px;border:1px solid #C00;background:#FFE5DB;margin-left:5px}
+
+/*LOGIN*/
+#login{width:320px;padding:20px;margin:100px auto 50px}
+#login label{color:#777}
+#login input.info{width:310px;padding:4px;display:block;margin-bottom:15px;font-size:24px;background:#F9F9F9;border:1px solid #CCC}
+#login input.err{border:1px solid #C00}
+#login p.erro{color:#C00;margin-bottom:15px;padding:10px;border:1px solid #C00;background:#FFE5DB}
+#login p.voltar{padding-top:10px;text-align:right;font-size:11px;color:#069}
+#login a{color:#069}
+#login a:hover{color:#000}
+
+/*PAINEL*/
+#painel{width:960px;padding:20px;margin:20px auto}
+
+/*MENU*/
+#menu{width:150px;float:left}
+#menu a{cursor:pointer}
+#menu p{background:#474747;padding:8px;border:1px solid #333;margin-top:2px}
+#menu p a{display:block;color:#FFF}
+#menu p a:hover{color:#CCC}
+#menu ul{display:none;margin-bottom:8px}
+#menu li a{display:block;background:#FFF;padding:3px 8px;border-width:0 1px 1px 1px;border-color:#999;border-style:solid;color:#333}
+#menu li a:hover,#menu li a.on{color:#C00;background:#FFF1E7}
+
+/*CONTEUDO*/
+#cont{width:780px;float:right;padding:2px 0 30px 0}
+#cont .w20{width:20px}
+#cont .w30{width:30px}
+#cont .w75{width:75px}
+#cont .w150{width:150px}
+#cont .w200{width:200px}
+#cont .w250{width:250px}
+#cont .w400 {width:400px}
+#cont .bg_fff{background:#fff}
+#cont p.erro{color:#C00;margin-bottom:15px;padding:10px;border:1px solid #C00;background:#FFE5DB}
+#cont p.sucesso{color:#666;margin-bottom:15px;padding:10px;border:1px solid #666;background:#FCFCFC}
+#cont tr.tit{background:#CCC;font-weight:bold}
+#cont tr.cor1{background:#FFF}
+#cont tr.cor2{background:none}
+#cont td.center{text-align:center}
+#cont table.tbl{width:100%}
+#cont table.tbl tr{border-width:0 1px 1px 1px;border-color:#CCC; border-style:solid}
+#cont table.tbl td{padding:6px;font-size:11px;line-height:16px;vertical-align:middle}
+
+/*USUARIO*/
+fieldset.usr input.txt{width:300px}
+
+/*POST*/
+fieldset.busca_post{padding-bottom:20px}
+fieldset.post textarea, fieldset.post input.txt{width:750px}
+fieldset.post input.txt{font-size:18px}
+fieldset.post tr.tit td{padding:4px}
+fieldset.post td.tit{padding-left:4px;width:50px}
+fieldset.post p.draft{font-size:11px;background:#E9E9E9;padding:6px;height:12px;margin-bottom:5px}
+fieldset.post p.draft span{display:block;float:left;width:350px}
+fieldset.post input.extra{float:left;width:200px;margin-right:5px}
+fieldset.post textarea.extra{float:left;width:537px;margin:2px 0 5px 0;height:14px}
+fieldset.post p.extra{padding-bottom:4px;clear:both;text-align:right;text-transform:lowercase;font-size:11px;cursor:pointer}
+
+/*PROMOTOR*/
+p#p_busca a{display:block;background:#CCC;padding:6px;font-weight:bold;cursor:pointer;margin-bottom:10px}
+p.promotores_voltar{padding:0 10px 15px;}
+p.promotores_voltar a{color:#C00}
+table.promotor tr{border-bottom:1px solid #ccc}
+table.promotor td{padding:4px 10px 4px}
+table.promotor td.tit{font-weight:bold;width:200px;vertical-align:middle}
+table#busca{display:none;width:100%;margin-bottom:10px}
+table.busca td.tit{padding-left:6px;width:100px}
+table.busca td{line-height:25px}
+table.busca tr{border:1px solid #CCC}
+table.promotor ul li {padding:3px 0}
+#promotores_edita ul.fotos li, table.promotor ul.fotos li{float:left;margin-right:10px}
+#promotores_edita ul.fotos li a.foto, table.promotor ul.fotos li a.foto{display:block;width:100px;height:100px;background-repeat:no-repeat;background-position:center;border:1px solid #000}
+table span.foto{display:block;width:100px;height:100px;background-repeat:no-repeat;background-position:center;border:1px solid #000}
+
+/*FOTOS*/
+table.fotos .mini span{display:block;width:100px;height:80px;margin-bottom:5px;background-position:center;background-repeat:no-repeat}
+table.fotos td{vertical-align:top}
+table.fotos a.corta_foto{cursor:pointer}
+#iframe{position:absolute;width:1000px;left:50px;top:50px;border:10px solid #000;display:none;overflow:auto;height:1000px;background:#F9F9F9}
+#fotoscad ul, .fotos_assoc ul{float:left;clear:both}
+#fotoscad li, .fotos_assoc li{width:110px;float:left;margin:5px 0 10px;font:normal 11px Arial}
+.fotos_assoc .acoes{float:none;padding-top:5px}
+.fotos_assoc p{background:#FCFCFC;padding:2px; border:1px solid #000;clear:both}
+
+/*DESTAQUES*/
+fieldset.destaques td.tit{width:150px}
+fieldset.destaques img{margin:10px 0}
+fieldset.destaques li{float:left;width:100px;padding:0 10px 10px 0}
+fieldset.destaques li label{font-size:10px}
+fieldset.destaques .error{float:left;margin-right:10px}

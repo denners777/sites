@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'DekarLightRegular';
+    src: url('dekar_light-webfont.eot');
+    src: url('dekar_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dekar_light-webfont.woff') format('woff'),
+         url('dekar_light-webfont.ttf') format('truetype'),
+         url('dekar_light-webfont.svg#DekarLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'DekarRegular';
+    src: url('dekar-webfont.eot');
+    src: url('dekar-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dekar-webfont.woff') format('woff'),
+         url('dekar-webfont.ttf') format('truetype'),
+         url('dekar-webfont.svg#DekarRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
